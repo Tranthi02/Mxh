@@ -1,12 +1,27 @@
-@media (max-width: 768px) 
-{
+/* Responsive */
+@media (max-width: 768px) {
     .d-flex {
         display: block;
     }
 
-    .top-menu {
+    .menu-toggle {
+        display: block;
+        padding: 0px;
+    }
+
+    .menu-items ul.nav {
+        display: none;
         flex-direction: column;
-        align-items: flex-start;
+        width: 100%;
+    }
+
+    .menu-items ul.nav.show {
+        display: flex;
+    }
+
+
+    .top-menu {
+        align-items: normal;
         padding-top: 20px;
     }
 
@@ -48,6 +63,7 @@
     .items {
         padding-top: 60px;
     }
+
     .item .text {
         width: 100%;
     }
@@ -55,7 +71,8 @@
     .items h2 {
         text-align: center;
     }
-    .item{
+
+    .item {
         display: block;
         text-align: center;
     }
@@ -119,8 +136,7 @@
     }
 
     .client_1 img {
-        display: flex;
-        justify-content: center;
+        width: 100%;
     }
 
     .newsletter-bg {
@@ -155,11 +171,8 @@
         text-align: center;
     }
 
-    .footer-right {
-        flex-direction: column;
-    }
-
     .footer-column {
+        width: 40%;
         margin-bottom: 20px;
     }
 
@@ -177,17 +190,35 @@
     .card-right {
         padding-top: 10px;
     }
+
     .content-items img {
         padding-left: 10px;
         max-height: 30px;
     }
+
     .card {
         flex-direction: column;
         justify-content: space-around;
     }
+
     .newsletter-form {
         flex-direction: column;
         align-items: stretch;
         width: 100%;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
     }
 }
