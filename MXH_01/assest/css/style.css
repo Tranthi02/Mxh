@@ -84,6 +84,7 @@ img {
 .menu-title {
   color: #000;
 }
+
 .menu-toggle {
   display: none;
   font-size: 24px;
@@ -91,6 +92,7 @@ img {
   padding: 15px;
   margin-left: auto;
 }
+
 .top-menu {
   display: flex;
   justify-content: space-between;
