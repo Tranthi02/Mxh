@@ -382,6 +382,7 @@ img {
   border-radius: 50%;
   z-index: -1;
 }
+
 .newsletter-bg::after {
   content: '';
   position: absolute;
@@ -393,6 +394,7 @@ img {
   border-radius: 50%;
   z-index: -1;
 } */
+
 .newsletter-title {
   font-size: 24px;
   font-weight: bold;
@@ -500,17 +502,34 @@ footer {
 }
 
 #scrollToTopBtn {
-  display: none;
+  display: block;
+  background-color: #000;
+  color:#fff;
+  width: 40px;
+  height: 40px;
+  font-size: 17px;
+  text-align: center;
+  border-radius: 4px;
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
   z-index: 1000;
-  font-size: 18px;
   border: none;
-  outline: none;
-  background-color: #555;
-  color: white;
+}
+
+/* #scrollToTopBtn:hover {
   cursor: pointer;
-  padding: 10px;
-  border-radius: 7px;
+  background-color: #ccc;
+  color: #000;
+} */
+#scrollToTopBtn:active {
+  background-color: #555;
+}
+#scrollToTopBtn.show {
+  opacity: 1;
+  visibility: visible;
 }
